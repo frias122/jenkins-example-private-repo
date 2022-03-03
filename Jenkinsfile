@@ -6,5 +6,10 @@ pipeline {
         sh 'echo "Hello World"'
       }
     }
+ stage('Memeory') {
+      steps {
+        sh 'free -m"'
+      }
+    }
   }
 }
